@@ -57,30 +57,30 @@ function App() {
   
   return (
     <>
-//     <Router>
-//     <Heder title="My Todos List" serchBar={true}/>
-//   <Switch>
-//     <Route exact path="/" render={()=>{
-//       return(
-//         <>
-//          <AddTodo addTodo={addTodo}/>
-//          <Todos todos={todos} onDelete={onDelete}/>
-//         </>
-//       )
-//     }}>
-      
-//     </Route>
-//     <Route exact  path="/About">
-//      <About/> 
-//     </Route>
-//   </Switch>
-//     <Footer/>
-//     </Router>
-// try to find out issue on Switch case in React-Dom
+    <Router>
     <Heder title="My Todos List" serchBar={true}/>
-    <AddTodo addTodo={addTodo}/>
-     <Todos todos={todos} onDelete={onDelete}/>
-        <Footer/>
+  <Switch>
+    <Route exact path="/" render={()=>{
+      return(
+        <>
+         <AddTodo addTodo={addTodo}/>
+         <Todos todos={todos} onDelete={onDelete}/>
+        </>
+      )
+    }}>
+      
+    </Route>
+    <Route exact  path="/About">
+     <About/> 
+    </Route>
+  </Switch>
+    <Footer/>
+    </Router>
+// try to find out issue on Switch case in React-Dom
+//     <Heder title="My Todos List" serchBar={true}/>
+//     <AddTodo addTodo={addTodo}/>
+//      <Todos todos={todos} onDelete={onDelete}/>
+//         <Footer/>
    </>
   );
 }
